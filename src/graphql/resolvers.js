@@ -37,7 +37,7 @@ const resolvers = {
       movies.push(newMovie);
       return newMovie;
     },
-    register: (_, {name, email, password}) => {
+    signup: (_, {name, email, password}) => {
       if (users.find(user => user.email === email)) {
         return false;
       }
